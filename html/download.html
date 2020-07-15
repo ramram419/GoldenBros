@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>골든브로스</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/download.css">
+
+    <script>
+        $(document).ready(function() {
+            $(".tab_btn li").click(function() {
+                var list = $(this).index();
+                $(".tab_btn li").removeClass("on");
+                $(this).addClass("on");
+
+                $(".tab_cont > li").hide();
+                $(".tab_cont > li").eq(list).show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="gnb_area">
+            <h1><a href="main.html" class="logo"><em>GOLDEN BROS</em></a></h1>
+            <h2 class="hide">대메뉴</h2>
+            <div class="gnb">
+                <nav>
+                    <ul>
+                        <li><a href="about-CEO.html">회사소개</a>
+                            <ul>
+                                <li><a href="about-CEO.html">CEO 인사말</a></li>
+                                <li><a href="about-vision.html">비젼</a></li>
+                                <li><a href="about-award.html">수상내역</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="notice.html">회사소식</a>
+                            <ul>
+                                <li><a href="notice.html">공지사항</a></li>
+                                <li><a href="news.html">뉴스</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="product.html">제품소개</a>
+                            <ul>
+                                <li><a href="product.html">제품소개</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="download.html">자료실</a>
+                            <ul>
+                                <li><a href="download.html">다운로드</a></li>
+                                <li><a href="data.html">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="inquiry.html">고객지원</a>
+                            <ul>
+                                <li><a href="inquiry.html">문의하기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div></div>
+                <h3><a href="" class="shop"><em>shop</em></a></h3>
+            </div>
+            <div class="banner">
+                <img src="../images/download.png" alt="" width="1920px" height="526px">
+
+                <div class="text">
+                    <h2>다운로드</h2>
+                    <p>골든브로스 어플에 대한 정보를 알려드립니다</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="tab_wrap">
+                <ul class="tab_btn">                  
+                    <li></li>
+                    <li></li>
+                    <a href="download.html"><li class="on">다운로드</li></a>
+                    <a href="data.html"><li class="">자료실</li></a>
+                    <li></li>
+                    <li></li>
+                </ul>
+                
+                <figure class="item">
+                    <a href=""><img src="../images/product.png" /></a>
+                    <figcaption class="caption">앱 이름<br>설명</figcaption>
+                </figure>
+                
+
+                <ul class="tab_cont">
+                    <!-- 여기는 탭 메뉴 추가되면 필요한 공간-->
+
+                </ul>
+            </div>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="clear">
+            <div class="f_logo">
+                <img src="../images/logo1.png" alt="로고">
+            </div>
+            <div class="about">
+                <p>
+                    성균관대학교 자연과학캠퍼스<br>
+                    경기도 수원시 장안구 서부로 2066<br>
+                    Tel : 031-290-5114<br>
+                    Copyright © 2019 GOLDEN BROS Corporation., All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body></html>

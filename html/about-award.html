@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>골든브로스</title>
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <link rel="stylesheet" type="text/css" href="../css/about-award.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".tab_btn li").click(function() {
+                var list = $(this).index();
+                $(".tab_btn li").removeClass("on");
+                $(this).addClass("on");
+
+                $(".tab_cont > li").hide();
+                $(".tab_cont > li").eq(list).show();
+            });
+        });
+    </script>
+</head>   
+<body>
+   
+    <header>
+       <div class="gnb_area">
+            <h1><a href="main.html" class="logo"><em>GOLDEN BROS</em></a></h1>
+            <h2 class="hide">대메뉴</h2>
+            <div class="gnb">
+               <nav>
+                <ul>
+                    <li><a href="about-CEO.html">회사소개</a>
+                        <ul>
+                            <li><a href="about-CEO.html">CEO 인사말</a></li>
+                            <li><a href="about-vision.html">비젼</a></li>
+                            <li><a href="about-award.html">수상내역</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="notice.html">회사소식</a>
+                        <ul>
+                            <li><a href="notice.html">공지사항</a></li>
+                            <li><a href="news.html">뉴스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">제품소개</a>
+                        <ul>
+                            <li><a href="product.html">제품소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="download.html">자료실</a>
+                        <ul>
+                            <li><a href="download.html">다운로드</a></li>
+                            <li><a href="data.html">자료실</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="inquiry.html">고객지원</a>
+                        <ul>
+                            <li><a href="inquiry.html">문의하기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+                <div></div>
+                <h3><a href="" class="shop"><em>shop</em></a></h3>
+            </div>
+        <div class="banner">
+            <img src="../images/about-award.png" alt="">
+            <div class="text">
+                <h2>수상내역</h2>
+                <p>골든브로스는 소방관을 위해 노력하는 기업입니다.</p>
+            </div>
+        </div>
+        </div>
+    </header>
+        
+    <main>
+        <div class="tab_wrap">
+            <ul class="tab_btn">
+                <a href="about-CEO.html"><li class="">CEO 인사말</li></a>
+                <a href="about-vision.html"><li class="">VISION</li></a>
+                <a href="about-award.html"><li class="on">수상내역</li></a>
+            </ul>
+        </div>
+        <div class="award">
+            <div>
+                <h2>2019</h2>
+                <p>미래창조과학부 장관상</p>
+                <p>교육부 장관상</p>
+            </div>
+            <div>
+               <h2>2018</h2>
+               <p>미래창조과학부 장관상</p>
+               <p>교육부 장관상</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="clear">
+           <div class="f_logo">
+               <img src="../images/logo1.png" alt="로고">
+           </div>
+           <div class="about">
+                <p>
+                    성균관대학교 자연과학캠퍼스<br>
+                    경기도 수원시 장안구 서부로 2066<br>
+                    Tel : 031-290-5114<br>
+                    Copyright © 2019 GOLDEN BROS Corporation., All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

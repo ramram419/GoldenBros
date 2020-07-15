@@ -1,0 +1,435 @@
+@charset "utf-8";
+
+
+
+
+/*header*/
+header {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute; 
+    top:50%; 
+    left:50%; 
+    display: block; 
+    width: 360px; 
+    height: 50px; 
+    margin-left:-80px;  
+    margin-top: 15px;
+    background: url("../images/logo2.jpg") no-repeat center center;
+}
+
+header > .gnb_area > h1 > .logo em {
+    position: absolute; 
+    top:0; 
+    left:0; 
+    width: 0; 
+    height: 0; 
+    overflow: hidden; 
+    opacity: 0;
+}
+
+header h1 {
+    width: 300px;
+    position: absolute;
+    z-index: 31;
+}
+
+header h3 {
+    width: 300px;
+    position: absolute;
+    z-index: 31;
+}
+
+.shop {
+    position: absolute;  
+    display: block; 
+    width: 50px; 
+    height: 50px;
+    left: 1350px;
+    margin-top: 15px;
+    background: url("../images/shop.jpg") no-repeat center center;
+}
+
+.gnb > h3 > .shop em {
+    position: absolute; 
+    top:0; 
+    left:0; 
+    width: 0; 
+    height: 0; 
+    overflow: hidden; 
+    opacity: 0;
+}
+
+header .gnb {
+    position: absolute;
+    z-index: 30;
+    width: 1500px;
+    height: 80px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    background-color: white;
+}
+
+header .gnb nav {
+    position: relative;
+    z-index: 30;
+    float: right;
+    margin-right: 170px;
+}
+
+header .gnb nav > ul {
+    display: inline-block;
+    height: 80px;
+    overflow: hidden;
+}
+
+header .gnb nav + div {
+    position: absolute;
+    z-index: 29px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+header .gnb nav > ul > li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    float: left;
+}
+
+header .gnb nav > ul > li > a {
+    position: relative;
+    display: block;
+    width: 120px;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 80px;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 80px;
+    color: black;
+}
+
+header .gnb nav > ul > li > a:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background: #aa1b1d;
+    transition: 0.5s;
+}
+
+header .gnb nav > ul:hover {
+    overflow: visible;
+}
+
+header .gnb nav:hover + div {
+    height: 290px;
+}
+
+header .gnb nav > ul > li:hover > a:after {
+    left: 0;
+    width: 100%;
+}
+
+header .gnb nav > ul ul {
+    padding: 20px 0 0;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+header .gnb nav > ul:hover ul {
+    opacity: 1;
+}
+
+header .gnb nav > ul ul li{
+    line-height: 50px;
+}
+
+header .gnb nav > ul ul a {
+    transition: all 0.3s;
+    position: relative;
+    font-size: 12pt;
+    font-weight: lighter;
+    color: black;
+}
+
+header .gnb nav > ul ul a:hover {
+    color: #aa1b1d;
+}
+
+header .gnb nav > ul ul a:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+.banner .text h2 { 
+    font-size: 50px;
+    color: white;
+}
+
+.banner .text p {
+    font-size: 15px;
+    
+}
+
+.banner {
+    position: relative;
+    width: 1500px;
+    height: 487px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner img {
+    vertical-align: middle;
+    left: 0;
+    top: 0;
+}
+
+.banner .text {
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    line-height: 2.3;
+    color: white;
+}
+
+.banner .text h2:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-65%);
+    bottom: -1px;
+    width: 300px;
+    height: 2px;
+    background: white;
+}
+
+
+/* main */
+
+main {
+    position: relative;
+    width: 1500px;
+    height: 1112px;
+    margin: 0 auto;
+}
+
+main .ul,
+main .li,
+main .ol {
+    list-style: none;
+
+}
+
+main .a {
+    text-decoration: none;
+
+}
+
+.tab_wrap {
+    width: 1500px;
+    margin: 0 auto;
+    background-color: #Aa1b1d;
+}
+
+.tab_btn {
+    position: relative;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+
+.tab_btn li {
+    width: 200px;
+    
+}
+
+.tab_btn a li {
+    display: block;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    color: white;
+    border-right: 1px solid #8e5e49;
+}
+
+.tab_btn li.on {
+    background-color: white;
+    color: black;
+}
+
+
+main figure.item {
+/*  탭 메뉴 css
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    padding: 200px 30px 30px 563px;
+*/
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main img {
+    width: 100%;
+    height: 100%;
+}
+
+main .caption {
+    display: block;
+    font-size: 15pt;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*임시*/
+
+.news {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.news_title {
+    padding: 58px 0 41px;
+    font-size: 30pt;
+    color: black;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+.news ul {
+    width: 1500px;
+    text-align: center;
+}
+
+.news li {
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    padding: 80px;
+    vertical-align: top;
+    font-weight: normal;
+    position: relative;
+    text-align: center;
+}
+
+.news li:first-child {
+    margin: 0;
+}
+
+.news li em {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 280;
+}
+
+.news li img {
+    width: 100%;
+    height: 280px;
+    ;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.news div {
+    padding: 10px;
+}
+
+.news li:hover img {
+    transform: scale(1.1);
+}
+
+.news li:hover a > div {
+    background: #e4e4e4;
+}
+
+.news h3 {
+    padding: 15px 10px;
+    line-height: 28px;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+.news p {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    margin: 0 auto;
+    width: 1500px;
+    background: #3f3f3f;
+}
+
+footer > div {
+    position: relative;
+    margin: 0 auto;
+    padding: 14px 70px;
+}
+
+.f_logo {
+    width: 300px;
+    position: absolute;
+    top: 30%;
+}
+
+footer .about {
+    letter-spacing: 1.4px;
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    line-height: 1.5em;
+}
